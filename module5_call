@@ -1,0 +1,11 @@
+from module5_mod import NumberSearcher
+
+def main():
+    searcher = NumberSearcher()
+    searcher.read_numbers()
+    X = int(input("Which number do you want to find? "))
+    result = searcher.search_number(X)
+    print(result)
+
+if __name__ == "__main__":
+    main()

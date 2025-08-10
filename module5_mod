@@ -1,0 +1,15 @@
+class NumberSearcher:
+    def __init__(self):
+        self.numbers = []
+
+    def read_numbers(self):
+        N = int(input("How many numbers do you want to enter? "))
+        for i in range(N):
+            num = int(input(f"Enter number {i + 1}: "))
+            self.numbers.append(num)
+
+    def search_number(self, X):
+        if X in self.numbers:
+            return self.numbers.index(X) + 1
+        else:
+            return -1
